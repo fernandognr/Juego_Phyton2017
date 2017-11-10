@@ -6,8 +6,10 @@ import sys, pygame, random
 from pygame.locals import *
 import random
 """variables globales"""
+#Constantes
 ancho = 800
 alto = 600
+#---------------------------------------------------------------------
 listaMeteors=[]
 
 # Constantes
@@ -212,7 +214,7 @@ def opciones():
         pygame.time.delay(10)
     return 0
 
-#---------------------------------DIFUCULTAD------------------------------------------
+#---------------------------------Menu inicio batalla------------------------------------------
 
 def dificultad():
     screen=pygame.display.set_mode((WIDTH, HEIGHT))
@@ -356,7 +358,7 @@ def cargarMeteoros(cantidadinicial):
     for x in range(cantidadinicial):
         meteor=Meteoritos()
         listaMeteors.append(meteor)
-
+#------------------Juego ---------------------------
 def historia4():
 
     pygame.init()
